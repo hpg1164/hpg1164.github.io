@@ -5,7 +5,7 @@ Welcome to my personal portfolio repository! This site showcases my skills, proj
 ## Table of Contents
 
 - [About Me](#about-me)
-- [Projects](#projec
+- [Projects](#project)
 - [Skills](#skills)
 - [Experience](#experience)
 - [Education](#education)
