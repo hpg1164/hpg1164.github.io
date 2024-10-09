@@ -163,7 +163,7 @@
             </li>
 
             <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>memos</button>
+              <button class="navbar-link" data-nav-link>control system</button>
             </li>
         
             <li class="navbar-item">
@@ -990,112 +990,136 @@
         </article> 
                  
            <!--
-        - #memo
+        - #control system
       -->
 
-        <article class="memos" data-page="memos">
+        <article class="control system" data-page="control system">
           <header>
-            <h2 class="h2 article-title">memos</h2>
+            <h2 class="h2 article-title">control system</h2>
           </header>
 
-          <section class="blog-posts">
-            <ul class="blog-posts-list">
-              <!-- <li class="blog-post-item">
-                <a href="#">
-                  <figure class="blog-banner-box">
-                    <img
-                      src="./assets/images/amd_ryzen7.jpg"
-                      alt="AMD 9000X3D CPUs"
-                      loading="lazy"
-                    />
-                  </figure>
+          <section class="control-posts">
+            <ul class="control-post-list">
+              <!DOCTYPE html>
+              <html lang="en">
+              <head>
+                  <meta charset="UTF-8">
+                  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                  <title>Control Methods Classification</title>
+                  <style>
+                      body {
+                          font-family: Arial, sans-serif;
+                          background-color: #1a1a1a; /* Dark background for contrast */
+                          color: white; /* White text */
+                      }
+                      h1 {
+                          text-align: center;
+                          text-transform: uppercase;
+                          font-size: 24px;
+                          margin-bottom: 20px;
+                      }
+                      ul {
+                          list-style-type: none;
+                          padding-left: 0;
+                      }
+                      li {
+                          margin: 8px 0;
+                          padding: 6px 10px;
+                      }
+                      .title {
+                          font-weight: bold;
+                          font-size: 18px;
+                          text-transform: uppercase;
+                          background-color: #333;
+                          border-left: 4px solid #f0a500; /* Orange for emphasis */
+                          cursor: pointer; /* Make the title clickable */
+                      }
+                      .level-1, .level-2, .level-3 {
+                          display: none; /* Initially hide the subcategories */
+                      }
+                      .level-1 {
+                          background-color: #444;
+                          margin-left: 20px;
+                          border-left: 4px solid #f0a500;
+                      }
+                      .level-2 {
+                          background-color: #555;
+                          margin-left: 40px;
+                          border-left: 4px solid #f0a500;
+                      }
+                      .level-3 {
+                          background-color: #666;
+                          margin-left: 60px;
+                          border-left: 4px solid #f0a500;
+                      }
+                      footer {
+                          margin-top: 20px;
+                          text-align: center;
+                          font-size: 12px;
+                          color: #999;
+                      }
+                  </style>
+              </head>
+              <body>
+              
+                  <h1>Classification of Control Methods in Control Theory</h1>
+              
+                  <ul>
+                      <li class="title" onclick="toggleVisibility('model-based')">Model-based</li>
+                      <ul id="model-based" class="level-1">
+                          <li>Mathematical Modeling</li>
+                          <li>System Identification</li>
+                      </ul>
+              
+                      <li class="title" onclick="toggleVisibility('model-free')">Model-free</li>
+                      <ul id="model-free" class="level-1">
+                          <li>Ziegler-Nichols PID Tuning</li>
+                          <li class="title" onclick="toggleVisibility('intelligent-control')">Intelligent Control</li>
+                          <ul id="intelligent-control" class="level-2">
+                              <li class="title" onclick="toggleVisibility('knowledge-based')">Knowledge-based</li>
+                              <ul id="knowledge-based" class="level-3">
+                                  <li>Fuzzy Logic Control</li>
+                                  <li>Expert Systems</li>
+                              </ul>
+                              <li class="title" onclick="toggleVisibility('learning-based')">Learning-based</li>
+                              <ul id="learning-based" class="level-3">
+                                  <li>Direct Neural Control</li>
+                                  <li>Reinforcement Learning (RL)</li>
+                              </ul>
+                          </ul>
+                      </ul>
+              
+                      <li class="title" onclick="toggleVisibility('hybrid-methods')">Hybrid Methods</li>
+                      <ul id="hybrid-methods" class="level-1">
+                          <li>Feedback Error Learning</li>
+                          <li>Data-driven MPC</li>
+                      </ul>
+                  </ul>
+              
+                  <footer>
+                      <p>Mahdi Shahrajabian © Sep 2024</p>
+                  </footer>
+              
+                  <script>
+                      // Function to toggle the visibility of subcategories
+                      function toggleVisibility(id) {
+                          var element = document.getElementById(id);
+                          if (element.style.display === "none" || element.style.display === "") {
+                              element.style.display = "block";
+                          } else {
+                              element.style.display = "none";
+                          }
+                      }
+                  </script>
+              
+              </body>
+              </html>
+              
 
-                  <div class="blog-content">
-                    <div class="blog-meta">
-                      <p class="blog-category">Tech</p>
-
-                      <span class="dot"></span>
-
-                      <time datetime="2022-02-23">Jul 23, 2024</time>
-                    </div>
-
-                    <h3 class="h3 blog-item-title">AMD 9000X3D CPUs</h3>
-
-                    <p class="blog-text">
-                      Rumors suggest that AMD's next-generation 9000X3D CPUs
-                      might have similar specifications to the current X3D
-                      gaming chips, but this isn't necessarily a reason to
-                      worry. These CPUs are expected to bring significant
-                      improvements in gaming and processing performance
-                    </p>
-                  </div>
-                </a>
-              </li> -->
-
-              <!-- <li class="blog-post-item">
-                <a href="#">
-                  <figure class="blog-banner-box">
-                    <img
-                      src="./assets/images/So-the-Galaxy-Z.jpg"
-                      alt="Samsung Galaxy Z Fold 6 Slim"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <div class="blog-content">
-                    <div class="blog-meta">
-                      <p class="blog-category">Tech</p>
-
-                      <span class="dot"></span>
-
-                      <time datetime="2022-02-23">Jul 21, 2024</time>
-                    </div>
-
-                    <h3 class="h3 blog-item-title">
-                      Samsung Galaxy Z Fold 6 Slim
-                    </h3>
-
-                    <p class="blog-text">
-                      The upcoming Samsung Galaxy Z Fold 6 Slim is rumored to
-                      feature super-sized displays, enhancing the foldable phone
-                      experience. This could mark a significant step forward in
-                      foldable technology
-                    </p>
-                  </div>
-                </a>
-              </li> -->
-
-              <!-- <li class="blog-post-item">
-                <a href="#">
-                  <figure class="blog-banner-box">
-                    <img
-                      src="./assets/images/apple-vision-pro.jpg"
-                      alt="Apple Vision Pro"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <div class="blog-content">
-                    <div class="blog-meta">
-                      <p class="blog-category">Tech</p>
-
-                      <span class="dot"></span>
-
-                      <time datetime="2022-02-23">Jul 20, 2024</time>
-                    </div>
-
-                    <h3 class="h3 blog-item-title">Apple Vision Pro</h3>
-
-                    <p class="blog-text">
-                      Apple's first mixed-reality headset, the Vision Pro,
-                      boasts the highest-resolution display ever made for such a
-                      device. It represents a bold step into the mixed-reality
-                      space, potentially revolutionizing how we interact with
-                      digital content
-                    </p>
-                  </div>
-                </a>
-              </li> -->
+             
+              
+                 
+              
             </ul>
           </section>
         </article> 
