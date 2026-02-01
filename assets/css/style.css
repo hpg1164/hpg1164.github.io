@@ -181,27 +181,36 @@ section {
 
 /* Lists */
 
+/* Lists - Minimalist Academic Style */
+
 ul {
   list-style-position: outside;
-  margin-left: 20px;
+  margin-left: 0;
+  /* Flush left for cleaner look, indent set on li */
   margin-bottom: 1em;
 }
 
 .academic-list,
 .bullet-list {
   list-style: none;
-  /* Custom styling or cleaner look */
-  margin-left: 0;
+  padding: 0;
+  margin: 0;
 }
 
+/* Common list item style */
 .academic-list li,
 .bullet-list li {
-  margin-bottom: 15px;
-  position: relative;
-  padding-left: 15px;
+  margin-bottom: 20px;
+  /* More space between items */
+  padding-left: 0;
 }
 
-.academic-list li::before,
+/* Bullet list specific (if used elsewhere) */
+.bullet-list li {
+  padding-left: 20px;
+  position: relative;
+}
+
 .bullet-list li::before {
   content: "•";
   position: absolute;
@@ -209,31 +218,51 @@ ul {
   color: var(--color-text-light);
 }
 
-.date {
-  float: right;
-  color: var(--color-text-light);
-  font-size: 0.9rem;
+/* Academic List Items Structure */
+.academic-list li {
+  display: block;
 }
 
-/* Projects */
-
-.project-list {
+.list-title {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 4px;
 }
 
-.project-item {
-  margin-bottom: 10px;
+.list-title strong {
+  font-weight: 500;
+  color: #111;
+  font-size: 1.05rem;
 }
 
-.project-item h3 {
-  margin-bottom: 5px;
-}
-
-.project-item p {
+.list-details {
   font-size: 0.95rem;
   color: #444;
+}
+
+.list-details em {
+  color: var(--color-text-light);
+  font-style: italic;
+}
+
+.list-details p {
+  margin-top: 4px;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+.date {
+  color: var(--color-text-light);
+  font-size: 0.9rem;
+  white-space: nowrap;
+  margin-left: 15px;
+}
+
+/* Remove old Project styles */
+.project-list {
+  display: none;
+  /* specific override just in case */
 }
 
 /* Responsive */
