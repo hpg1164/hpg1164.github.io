@@ -265,6 +265,64 @@ ul {
   /* specific override just in case */
 }
 
+/* Research Project Card - Side by Side Layout */
+.research-project-card {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+}
+
+.research-project-image {
+  flex: 0 0 45%;
+  max-width: 45%;
+}
+
+.research-project-image img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.image-caption {
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+  text-align: center;
+  margin-top: 8px;
+  font-style: italic;
+}
+
+.research-project-content {
+  flex: 1;
+}
+
+.research-project-content .list-title {
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.research-project-content .list-title .date {
+  margin-left: 0;
+  margin-top: 5px;
+}
+
+/* Responsive for research project card */
+@media (max-width: 768px) {
+  .research-project-card {
+    flex-direction: column;
+  }
+
+  .research-project-image {
+    flex: none;
+    max-width: 100%;
+  }
+}
+
 /* Responsive */
 
 @media (max-width: 768px) {
